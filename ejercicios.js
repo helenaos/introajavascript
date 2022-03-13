@@ -69,6 +69,6 @@ function serieFibonacci(limite) {
     }
     return fibonacci;
   }
-  
+
   console.log(serieFibonacci(50));
   
