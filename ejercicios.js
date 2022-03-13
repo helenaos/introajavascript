@@ -50,4 +50,25 @@ const ejercicio2 = [
       esFamiliar: true,
     },
   ];
+const acceso = []
+
+for(let indice2 = 0; indice2 < ejercicio2.length; indice2++){
+  if(ejercicio2[indice2].edad >= 18 && ejercicio2[indice2].esFamiliar){
+    acceso.push(ejercicio2[indice2].nombre)
+  }
+}
+
+console.log(`Tienen acceso: ${acceso}`)
+
+//Ejercicio 3
+//Imprimir los primeros 50 números de la serie de Fibonacci
+function serieFibonacci(limite) {
+    const fibonacci = [0, 1]; // la serie comienza con 0 y 1
+    for (let i = 2; i < limite; i++) { // igualamos a 2 porque es el index que nos falta
+      fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2]; // en el index 2 se pone la suma de lo que hay en index 1 + lo que hay en index 0
+    }
+    return fibonacci;
+  }
+  
+  console.log(serieFibonacci(50));
   
